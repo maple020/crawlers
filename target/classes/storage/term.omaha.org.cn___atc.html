@@ -1,0 +1,981 @@
+<!-- <!DOCTYPE html> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+<!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /> -->
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta name="renderer" content="webkit" />
+<title>HiTA术语服务</title>
+<meta name="keywords" content="OMAHA社区" />
+<meta name="description" content="OMAHA社区"  />
+<link rel="icon" href="http://term.omaha.org.cn/static/image/favicon.ico" type="image/x-icon">
+<base href="http://term.omaha.org.cn/?/" /><!--[if IE]></base><![endif]-->
+<!-- 新的头部 -->
+<link rel="stylesheet" href="http://term.omaha.org.cn/static/title/bs/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://term.omaha.org.cn/static/title/jq22.css">
+<script src="http://term.omaha.org.cn/static/title/jq22.js"></script>
+<script src="http://term.omaha.org.cn/static/title/bs/js/bootstrap.min.js"></script>
+<!-- 新的头部 -->
+<link rel="shortcut icon" href="http://term.omaha.org.cn/?/ " type="image/x-icon" />
+<link rel="icon" href="http://term.omaha.org.cn/?/ " type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/easyui/easyui.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/easyui/icon.css" /> -->
+<link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/icon.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/demo.css" /> -->
+<link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/datatables/dataTables.bootstrap.css" />
+
+<!-- <link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/combo.select.css" /> -->
+<style style="text/css">
+.tree li {
+    white-space: normal;
+}
+</style>
+<link href="http://term.omaha.org.cn/static/css/default/common.css?v=20160523" rel="stylesheet" type="text/css" />
+<link href="http://term.omaha.org.cn/static/css/default/link.css?v=20160523" rel="stylesheet" type="text/css" />
+<link href="http://term.omaha.org.cn/static/js/plug_module/style.css?v=20160523" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="http://term.omaha.org.cn/static/css/omaha.css" />
+
+<script type="text/javascript">
+	var _62BC0E547CBB3A5CBD7E7F0885C89346="";
+	var G_POST_HASH=_62BC0E547CBB3A5CBD7E7F0885C89346;
+	var G_INDEX_SCRIPT = "?/";
+	var G_SITE_NAME = "OMAHA社区";
+	var G_BASE_URL = "http://term.omaha.org.cn/?";
+	var G_STATIC_URL = "http://term.omaha.org.cn/static";
+	var G_UPLOAD_URL = "http://forum.omaha.org.cn/uploads";
+	var G_USER_ID = "";
+	var G_USER_NAME = "";
+	var G_UPLOAD_ENABLE = "N";
+	var G_UNREAD_NOTIFICATION = 0;
+	var G_NOTIFICATION_INTERVAL = 100000;
+	var G_CAN_CREATE_TOPIC = "";
+	var G_ADVANCED_EDITOR_ENABLE = "Y";
+
+	</script>
+<script src="http://term.omaha.org.cn/static/js/jquery.2.js?v=20160523" type="text/javascript"></script>
+<script src="http://term.omaha.org.cn/static/js/jquery.form.js?v=20160523" type="text/javascript"></script>
+<script src="http://term.omaha.org.cn/static/js/plug_module/plug-in_module.js?v=20160523" type="text/javascript"></script>
+<script src="http://term.omaha.org.cn/static/js/aws.js?v=20160523" type="text/javascript"></script>
+<script src="http://term.omaha.org.cn/static/js/aw_template.js?v=20160523" type="text/javascript"></script>
+<script src="http://term.omaha.org.cn/static/js/app.js?v=20160523" type="text/javascript"></script>
+<script type="text/javascript" src="http://term.omaha.org.cn/static/js/compatibility.js"></script>
+<script type="text/javascript" src="http://term.omaha.org.cn/static/js/jquery.easyui.min.js"></script>
+<!-- <script type="text/javascript" src="http://term.omaha.org.cn/static/js/jquery.combo.select.js" ></script> -->
+<script type="text/javascript" src="http://term.omaha.org.cn/static/js/datatables/jquery.dataTables.min.js" ></script>	
+<script type="text/javascript" src="http://term.omaha.org.cn/static/js/datatables/jquery.dataTables.js" ></script>	
+
+<!--[if lte IE 8]>
+	<script type="text/javascript" src="http://term.omaha.org.cn/static/js/respond.js"></script>
+<![endif]-->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0024ba14391d06bd1dcbb7dbee2c6344";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', 'a508b67b6290f2d8']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+</script>
+
+<!-- 自动推送的功能代码 -->
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="http://term.omaha.org.cn/static/common/no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript><style>
+  .signNo{
+    width:80px;
+    height:30px;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .signdownload{
+    width:80px;
+    height:30px;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #58BA56;
+  }
+</style>
+
+<!-- Modal -->
+<div class="modal fade modal_hint" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:rgba(0,0,0,0.3);">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="top:160px">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align: center;color:#ff8355">提示</h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p style="margin-top: 10px" id="modal_p">请登录之后再进行操作</p>
+        <p id="modal_p2">立即<a class="modal_a" href="http://term.omaha.org.cn/?/account/login/">登录</a>或<a class="modal_a" href="http://term.omaha.org.cn/?/account/register/">注册</a></p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 小程序二维码 -->
+<div class="modal fade modal_hint" id="myModals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:rgba(0,0,0,0.6);">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color:rgba(999,999,999,0);border:none;box-shadow: none">
+      <div class="modal-header">
+        <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;opacity: 1"><span aria-hidden="true" style="color:#fff;">&times;</span></button>
+      </div>
+      <div class="modal-body" style="text-align: center;padding:0px">
+       <img src="http://term.omaha.org.cn/static/image/xcx.jpg" alt="" />
+       <p style="padding-top: 20px;color:#fff">微信扫描二维码进入小程序</p>
+       <br>
+       <p style="color:#fff">收录各地主流版本的疾病分类与代码（ICD-10扩展版本）、手术操作分类与代码（ICD-9-CM-3扩展版本）、形态学编码，支持疾病同义词、常用缩写词等检索方式</p>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 常用子集 -->
+<div class="modal fade modal_hint" id="mySubset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="margin-top:100px">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body" style="padding:23px 37px;margin-top: -15px">
+          <p class="subsetModalTitle">常用子集</p>
+          <div class="subsetClassify">
+            <p class="subsetClassifyName">语义标签:</p>
+            <div class="subsetClassifyBody">
+              <ul>
+                <li class="subsetClassifyBtn subsetSelect" data-num="finding" data-type="1">症状</li>
+                <li class="subsetClassifyBtn" data-num="body structure" data-type="1">解剖</li>
+                <!-- <li class="subsetClassifyBtn" data-num="">症状</li> -->
+                <li class="subsetClassifyBtn" data-num="1383632" data-type="2">微生物</li>
+                
+              </ul>
+            </div>
+            <div style="clear:both"></div>
+          </div>
+
+          <div class="subsetClassify">
+            <p class="subsetClassifyName">常见疾病领域:</p>
+            <div class="subsetClassifyBody">
+              <ul>
+                <li class="subsetClassifyBtn" data-num="1173306" data-type="2">呼吸系统疾病</li>
+                <li class="subsetClassifyBtn" data-num="nfmxthyydxxjb" data-type="2">内分泌系统和营养代谢性疾病</li>
+                <li class="subsetClassifyBtn" data-num="1268220" data-type="2">遗传性疾病</li>
+                <li class="subsetClassifyBtn" data-num="11361202" data-type="2">疼痛病</li>
+                <li class="subsetClassifyBtn" data-num="11060444" data-type="2">肌肉骨骼系统疾病</li>
+                <li class="subsetClassifyBtn" data-num="jsxjb" data-type="2">精神性疾病</li>
+                <li class="subsetClassifyBtn" data-num="1196594" data-type="2">心血管疾病</li>
+                <li class="subsetClassifyBtn" data-num="1179561" data-type="2">传染病</li>
+                <li class="subsetClassifyBtn" data-num="gdyxgjb" data-type="2">肝胆胰相关疾病</li>
+                <li class="subsetClassifyBtn" data-num="11218169" data-type="2">男性生殖系统疾病</li>
+                <li class="subsetClassifyBtn" data-num="11217571" data-type="2">儿科疾病</li>
+                <li class="subsetClassifyBtn" data-num="1115142" data-type="2">乳房相关疾病</li>
+              </ul>
+            </div>
+            <div style="clear:both"></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="subsetBtnSubmit publicSubsetBtn">子集定制</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 会员权益提醒框 -->
+<div class="modal fade modal_hint" id="memberPrivilege" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:rgba(0,0,0,0.3);">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="top:160px;width:400px;margin:0 auto">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align: center;color:#ff8355">提示</h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p style="margin: 10px 0px 30px 0px" id="member_p"></p>
+        <button class="lookMemberInfo">查看会员权益</button>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 打包提示 -->
+<div class="modal fade modal_hint" id="packPrivilege" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:rgba(0,0,0,0.3);">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="top:160px;width:400px;margin:0 auto">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align: center;color:#ff8355">提示</h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p style="margin: 10px 0px 30px 0px" id="member_p"></p>
+          <div id="loading">
+            <div id="loading-center" style="margin-left: 126px">
+              <div class="loading-text" style="margin-left:-14px">正在打包中!</div>
+              <div class="object" id="object_one"></div>
+              <div class="object" id="object_two"></div>
+              <div class="object" id="object_three"></div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- signProtocol签署保密协议 -->
+<div class="modal fade modal_hint" id="signProtocol" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="margin-top:100px">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body" style="padding:23px 37px;margin-top: -15px">
+          <p style="font-size: 16px;font-weight: bold;text-align: center;">资料保密协议</p>
+          <br>
+          <p style="font-size: 12px">OMAHA术语集仅对OMAHA机构会员、赞助会员开放下载权限，下载OMAHA术语集的机构及个人，应当遵守以下资料保密条款：</p>
+          <p style="font-size: 12px">1．甲方不得以任何方式（包括但不限于传播、转发、复制、拷贝、复印）将OMAHA术语集资料透漏给任何第三方，同时应尽力避免由于疏忽将保密信息披露给任何第三方。</p>
+          <p style="font-size: 12px">2. 本协议适用中华人民共和国法律并按其解释，如下载方违反本协议的规定，乙方将对甲方追究法律责任。</p>
+          <p style="font-size: 12px">3. 因甲方违约行为而致使乙方遭受损失的，甲方应承担全部赔偿责任，如甲方因违约而受有利益，则应将所得利益支付给乙方。</p>
+          <p style="font-size: 12px">4. 本协议自同意之日起生效，并持续有效，双方协商一致可终止协议。</p>
+          <p style="font-size: 12px">5. 任何通过友好协商后不能解决的争议均应提交协议签订地人民法院诉讼解决。</p>
+          <br>
+          <p style="font-size: 12px">OMAHA对OMAHA术语集拥有最终解释权。</p>
+      </div>
+      <div class="modal-footer" style="text-align: center;padding-bottom: 20px">
+        <button class="signNo">取消</button>
+        <button type="button" class="signdownload">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(".modal_hint").click(function(){
+    document.getElementById("close").click();
+  })
+
+  $(".lookMemberInfo").click(function(){
+    window.open("http://www.omaha.org.cn/index.php?g=&m=article&a=index&id=22&cid=40");
+  })
+
+  //子集制定
+  $(".publicSubsetBtn").click(function(){
+      var conceptId = $(".subsetSelect").attr("data-num");
+      var version = $(".subsetType").attr("data-version");
+      var userType = "";
+      var text = $(".subsetSelect").text();
+      var typeData = $(".subsetSelect").attr("data-type");
+
+
+      if(conceptId){
+        if(userType==1){
+          window.location.href="/?/api/subsetinfo/q"+"-"+conceptId+"__"+"version"+"-"+version+"__"+"text"+"-"+text+"__"+"type"+"-"+typeData;
+        }else if(userType==2){
+            if(version==1){
+               window.location.href="/?/api/subsetinfo/q"+"-"+conceptId+"__"+"version"+"-"+version+"__"+"text"+"-"+text+"__"+"type"+"-"+typeData;
+            }else{
+              $("#member_p").text("目前仅对赞助会员开放，详情请参与会员权益。");
+              $('#memberPrivilege').modal('show');
+            }
+        }else{
+
+          if(version==1){
+            $('#mySubset').modal('hide');
+            $("#member_p").text("目前仅对机构和赞助会员开放，详情请参阅会员权益。");
+            $('#memberPrivilege').modal('show');
+          }else{
+            $('#mySubset').modal('hide');
+            $("#member_p").text("目前仅对赞助会员开放，详情请参阅会员权益。");
+            $('#memberPrivilege').modal('show');
+          }
+        }
+      }
+  })
+
+  //取消前端资料（数据）保密协议
+  $(".signNo").click(function(){
+    $('#signProtocol').modal('hide');
+  })
+
+</script>
+<style>
+	body{padding:0px;margin:0px;}
+	.dropdown-menu a:hover{
+		background-color: #0699F9;
+	}
+
+	.nav_a{
+		color:#fff;
+	}
+
+	.nav_a:link {color: #FFF}		/* 未访问的链接 */
+	.nav_a:visited {color: #FFF}	/* 已访问的链接 */
+	.nav_a:hover {color: #FFF}	/* 鼠标移动到链接上 */
+	.nav_a:active {color: #FFF}	/* 选定的链接 */
+</style>
+
+<body style="min-width:1000px;padding-top: 80px">
+	<!-- 头部定位样式 -->
+	
+	<div class="publicWidth" style="background-color: #1B7AD8;height:30px;position: absolute;top:0px;width:100%">
+		<div style="width: 1000px;height:30px;margin:0 auto;">
+			<div style="width:70%;float:left;line-height: 30px;color: #fff;font-size: 12px"><a class="nav_a" href="http://www.omaha.org.cn/" target="_black"><span style="font-family: Calibri;font-size: 12px">OMAHA</span>开放医疗与健康联盟，欢迎您！</a></div>
+			<div style="width:30%;float:left;">
+				<ul style="float:right;">
+
+						<div id="nav-user">
+							<div class="dropdown" style="height:30px;">
+																			<li style="float: left;line-height: 30px;padding-right: 12px;font-size: 12px"><a href="http://term.omaha.org.cn/?/account/register/" style="color:#fff;">注册</a></li>
+											<li style="float: left;line-height: 30px;font-size: 12px"><a href="http://term.omaha.org.cn/?/account/login/" style="color:#fff;">登录</a></li>
+																		
+
+								
+							</div>
+						</div>
+					
+						
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="publicWidth" style="position: absolute;top:30px;z-index: 999;width:100%;background-color: #FFF;border-bottom: 1px solid #eeeeee;min-width: 1000px;box-shadow: rgb(238, 238, 238) 0px 8px 8px -7px;">
+	   <div id='cssmenu' style="width: 1000px;margin:0 auto">
+	      <ul>
+	         <li><a style="padding-left: 0px" href=''><img style="margin-top: 4px" src="http://term.omaha.org.cn/static/image/termlogo.png"/></a></li>
+	         
+				<li><a href='http://term.omaha.org.cn/?/hita/abouthita/' id="classify1" style="padding:26px">关于HiTA TERM</a>
+		            <ul>
+						<li><a href='http://term.omaha.org.cn/?/hita/abouthita/' style="font-size: 16px">HiTA TERM介绍</a></li>
+						<li><a href='http://term.omaha.org.cn/?/hita/abouttangram/' style="font-size: 16px">七巧板项目介绍</a></li>
+		            </ul>
+		        </li>
+
+		        <li><a href='http://term.omaha.org.cn/?/termresource/v20180720/' id="classify2" style="padding:26px">术语资源</a>
+		            <ul>
+						<li><a href='http://term.omaha.org.cn/?/termresource/v20180720/' style="font-size: 16px">术语下载</a></li>
+						<li><a href='http://term.omaha.org.cn/?/termresource/list/' style="font-size: 16px">资源清单</a></li>
+						<li><a href='http://term.omaha.org.cn/?/termresource/hitaplan/' style="font-size: 16px">发布计划</a></li>
+		            </ul>
+		        </li>
+
+		        <li><a href='http://term.omaha.org.cn/?/termcommunity/studycultivate/' id="classify3" style="padding:26px">术语社区</a>
+		            <ul>
+						<li><a href='http://term.omaha.org.cn/?/termcommunity/studycultivate/' style="font-size: 16px">学习与培训</a>
+							<ul>
+								<li><a href='http://wiki.omaha.org.cn/pages/viewpage.action?pageId=9568468' style="font-size: 16px" target="_black">术语集入门指南</a></li>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/sultivate/' style="font-size: 16px">专题培训</a></li>
+				            </ul>
+						</li>
+						<li>
+							<a href='http://term.omaha.org.cn/?/termcommunity/feedback/' style="font-size: 16px">反馈与申请</a>
+							<ul>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/specimen/' style="font-size: 16px">样例数据申请</a></li>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/issuefeedback/' style="font-size: 16px">术语问题反馈</a></li>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/issuefeedback/' style="font-size: 16px">术语需求反馈</a></li>
+				            </ul>
+						</li>
+						<li><a href='http://term.omaha.org.cn/?/termcommunity/personagecontribution/' style="font-size: 16px">贡献榜</a>
+							<ul>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/personagecontribution/' style="font-size: 16px">个人贡献榜</a></li>
+								<li><a href='http://term.omaha.org.cn/?/termcommunity/companycontribution/' style="font-size: 16px">企业贡献榜</a></li>
+							<!-- 	<li><a href='http://term.omaha.org.cn/?/termcommunity/fundsupport/' style="font-size: 16px">资金支持者</a></li> -->
+				            </ul>
+						</li>
+						<!-- <li><a href='http://term.omaha.org.cn/?/termcommunity/adopter/' style="font-size: 16px">采用者目录</a></li> -->
+		            </ul>
+		        </li>
+
+		        <li><a href='http://term.omaha.org.cn/?/icd' id="classify4" style="padding:26px">术语应用</a>
+		            <ul>
+		            	<li><a href='http://term.omaha.org.cn/?/icd' style="font-size: 16px">ICD-10</a></li>
+						<li><a href='http://term.omaha.org.cn/?/icd9' style="font-size: 16px">ICD-9-CM-3</a></li>
+						<li><a href='http://term.omaha.org.cn/?/atc' style="font-size: 16px">ATC</a></li>
+						<li><a href='' style="font-size: 16px" data-toggle="modal" data-target="#myModals">ICD微信小程序</a></li>
+		            </ul>
+		        </li>
+
+		        <li><a href='http://term.omaha.org.cn/?/api' id="classify5" style="padding:26px">技术服务</a>
+		            <ul>
+						<li><a href='http://term.omaha.org.cn/?/api' style="font-size: 16px">ICD编码API</a></li>
+						<li><a href='http://term.omaha.org.cn/?/api/batch/' style="font-size: 16px">ICD编码批量查询</a></li>
+						<li><a href="http://member.omaha.org.cn/login?redirect=http://term.omaha.org.cn/?/api/subset/" style="font-size: 16px">子集定制</a></li>
+		            </ul>
+		        </li>
+	         	
+	         	<li style="float:right;"><a style="padding:26px 0px" href="http://workflow.omaha.org.cn/" target="_black">术语维护平台</a></li>
+	      </ul>
+	   </div>
+	</div>
+
+<script>
+
+
+	$(function(){
+		//头部效果，提示所在分类
+		
+		var type = "atc";
+		if(type == 'hita'){
+			$("#classify1").css("color","#17A0E8");
+		}else if(type == 'termresource'){
+			$("#classify2").css("color","#17A0E8");
+		}else if(type == 'termcommunity'){
+			$("#classify3").css("color","#17A0E8");
+		}else if(type == 'icd' || type == 'icd9' || type == 'atc'){
+			$("#classify4").css("color","#17A0E8");
+		}else if(type == 'api'){
+			$("#classify5").css("color","#17A0E8");
+		}
+	})
+
+	//鼠标滑入滑出下拉菜单打开与关闭！
+	$("#nav-user").mouseover(function(){
+		$(".dropdown").addClass("open");
+	}) 
+
+	$("#nav-user").mouseleave(function(){
+		$(".dropdown").removeClass("open");
+	})
+</script>
+
+
+<div class="tree">
+	<!-- 搜索框  -->
+	<form class="navbar-search" action="http://term.omaha.org.cn/?/search/" id="global_search_form" method="post">
+		<div class="input-group" id="search">
+			<input class="form-control search-query search-input" type="text" placeholder="搜索代码、术语" autocomplete="off" name="q" id="aw-search-query" style="height: 34px;width:267px;border-radius: 2px 0px 0px 2px;border-right: none" />
+			<input type="hidden" name="t" value="topics">
+			<input type="hidden" name="ty" value="atc">
+			<span class="input-group-btn" style="float: right;width:1px" title="搜索" id="global_search_btns"><input class="search-submit"></span>
+		</div>
+	</form>
+	<ul>
+		<li>
+			<span class='glyphicon glyphicon-chevron-down' data-code="ATC"></span>
+			<span class='name' style="font-weight: bold;" data-id="1">ATC&nbsp;&nbsp;解剖学治疗学及化学分类</span>
+			
+		</li>
+	</ul>
+</div>
+
+<div class="detail">
+	<input class="ids" style="display: none;" type="text">
+	<div class="tab-content"> 
+		<div class="detail-name">
+			<span class="detailName" style="display: inline-block; width: 75%; line-height: 160%;color:#2479B7"></span>
+					</div>
+	    <ul class="nav nav-tabs aw-nav-tabs">  
+	        <li class="details active"><a href="#details" data-toggle="tab">详情</a></li>  
+	        <li class="discuss"><a href="#discuss" data-toggle="tab">讨论</a></li>  
+			<li class="download"><a href="#download" data-toggle="tab">下载</a></li>
+	        <!-- <li><a href="" data-toggle="tab">待编码疾病</a></li>   -->
+	        <div class="back" style="float: right;"><a style="color:#333333;padding-right: 18px"><span style="margin-right: 6px;"><img src="static/image/triangle.png" alt="" style="margin-bottom: 3px"></span><span>返回上一级</span></a></div>
+	    </ul>  
+   
+        <div class="tab-pane active" id="details">  
+        	
+
+        	<!-- 介绍 -->
+        	<div class="detail-introduce">
+        		<span></span>
+        	</div>
+
+        	<!-- 频度说明 -->
+        	<div class="detail-addition">
+        		<span></span>
+        	</div>
+
+        	<!-- DDD -->
+        	<div class="detail-frequence">
+        		<span class="subTitle">DDD:</span>
+        		<table class="subContent">
+        			<thead>
+        				<tr>
+        					<td width="80px">DDD</td>
+        					<td width="70px">U</td>
+        					<td width="100px">Adm.R</td>
+        					<td>Note</td>
+        				</tr>
+        			</thead>
+        			<tbody>
+        				
+        			</tbody>
+        		</table>
+        	</div>
+
+    		<!-- <div class="back" style="float: right;"><a style="color:#333333;padding-right: 18px"><span style="margin-right: 6px;"><img src="static/image/triangle.png" alt="" style="margin-bottom: 3px"></span><span>返回上一级</span></a></div> -->
+
+    		<!-- 子集 -->
+        	<div class="detail-subordinate">
+        		<span class="subTitle">包含下列内容：</span>
+        		<table class="subContent">
+        			<tbody>
+        				
+        			</tbody>
+        		</table>
+        	</div>
+
+        	<!-- 相关代码 -->
+        	<div class="detail-code">
+        		<span class="subTitle">相关代码：</span>
+        		<table class="subContent">
+        			<tbody>
+        				
+        			</tbody>
+        		</table>
+        	</div>
+        </div>  
+        
+        <div class="tab-pane" id="discuss">
+	
+        </div>
+        <div class="tab-pane" id="download">
+			<!-- 下载 -->
+        	<div class="detail-download">
+        		        			<p>您好，<a href="http://www.omaha.org.cn" target='_blank'><b style="color:#49AAF6">OMAHA</b></a>欢迎您下载以下文件，以下文件的下载需要申请成为OMAHA的机构会员，更多机构会员的服务介绍<a href="http://www.omaha.org.cn/portal.php?mod=view&aid=13" style="color:#49AAF6" target='_blank'>请点击查看>></a></p>
+	        		<span>或者您可以选择在此<a style="color: #499ef3;" href="http://term.omaha.org.cn/?/account/applymember/">申请机构会员</a></span>
+        		
+        		<span class="subContent">
+        			<ul>
+
+        				<li style="border-bottom: 1px solid #ccc">
+        					<p><b>2017_ATC解剖学治疗学及化学分类_OMAHA本地化版本</b></p>
+        					<p style="width:100%">
+
+																	<span class="btn" style="float:right;background: #ccc;width:80px;color:#fff">下载</span>
+        						        					
+        					</p><br><br>
+        				</li>
+        			</ul>
+        		</span>
+        	</div>
+        </div>
+    </div>  
+</div>
+
+<script src="http://term.omaha.org.cn/static/js/cookie.js" ></script>
+<script type="text/javascript">
+	var url = 'http://meta.omaha.org.cn/';
+	var urls ='';
+
+	// 下载文件url
+	$(".file-download").click(function(){
+		var filename = $(this).parent().parent().find("p:first").text();
+		var token = $.cookie("member_UU");
+		var fileUrl = url + "/icd/download/down?filename=" + filename + "&token=" + token;
+		window.location.href = fileUrl;
+	});
+	
+	// 首次加载
+	window.onresize = function(){
+		var h1 = $(window).height() - 140;
+		var h2 = $(window).height() - 150;
+		$(".tree").height(h1);
+		$(".tab-content").height(h2);
+	}
+	$(document).ready(function(){
+		var h1 = $(window).height() - 140;
+		var h2 = $(window).height() - 150;
+		$(".tree").height(h1);
+		$(".tab-content").height(h2);
+		
+		var index = url + "/atc/index";
+		$.get(index, function(d){
+			var tree = d.tree;
+			var detail = d.detail;
+			var list = "<ul>"
+			for (var i = 0; i < tree.length; i++) {
+				if(tree[i].sub == 0){
+					if(tree[i].cpNameCn == null || tree[i].cpNameCn ==""){
+						list += "<li><span class='glyphicon glyphicon-minus' style='color: #d5d5d5; cursor: default;'></span><span class='name' data-id='" + tree[i].id + "'>" + tree[i].atcCode + "&nbsp;&nbsp;" + "&nbsp;&nbsp;" + tree[i].cpNameEn + "</span></li>";
+					}else{
+						list += "<li><span class='glyphicon glyphicon-minus' style='color: #d5d5d5; cursor: default;'></span><span class='name' data-id='" + tree[i].id + "'>" + tree[i].atcCode + "&nbsp;&nbsp;" + tree[i].cpNameCn + "&nbsp;&nbsp;" + "</span></li>";
+					}
+					
+				} else{
+					if(tree[i].cpNameCn == null || tree[i].cpNameCn ==""){
+						list += "<li><span data-code='" + tree[i].atcCode + "' class='glyphicon glyphicon-chevron-right'></span><span class='name' data-id='" + tree[i].id + "'>" + tree[i].atcCode + "&nbsp;&nbsp;" + "&nbsp;&nbsp;" + tree[i].cpNameEn + "</span></li>";
+					}else{
+						list += "<li><span data-code='" + tree[i].atcCode + "' class='glyphicon glyphicon-chevron-right'></span><span class='name' data-id='" + tree[i].id + "'>" + tree[i].atcCode + "&nbsp;&nbsp;" + tree[i].cpNameCn + "&nbsp;&nbsp;" + "</span></li>";
+					}
+					
+				}
+			}
+			list = list + "</ul>";
+			$(".tree ul li").append(list);
+
+			$(".ids").val(detail.atc.id);
+			concern();
+
+			// id判断根节点
+			if(detail.atc.id == 1){
+				$(".omahabtn").hide();
+			} else{
+				$(".omahabtn").show();
+			}
+
+			$(".detail-name .detailName").html(detail.atc.cpNameCn);
+			$(".detail-introduce span").html(detail.atc.atcExplain);
+			// $(".detail-introduce").append("<ul class='nav'><li><a class='btn navbar-btn' style='width: 92px; height: 30px; border-radius: 8px; color: #fff; font-size: 14px; padding-top: 4px; padding-left: 15px; margin-top: 14px; margin-bottom: 0; background-image: url(http://term.omaha.org.cn/static/image/knowMoreBg.png); background-repeat:no-repeat;''>了解更多</a></li></ul>");
+			if(detail.atc.addition != "" && detail.atc.addition != null){
+				$(".detail-addition").show();
+				$(".detail-addition span").html(detail.atc.addition);
+			} else{
+				$(".detail-addition").hide();
+			}
+			$(".back").hide();
+			$(".detail-subordinate").show();
+			var list = "";
+			for (var i = 0; i < detail.subs.length; i++) {
+				if(detail.subs[i].cpNameCn == null){
+					list += "<tr class='detailSub' data-num='" + detail.subs[i].id + "'><td class='subContent-code' style='vertical-align: top !important;'>" + detail.subs[i].atcCode + "</td><td class='subContent-name'>" +"&nbsp;" + detail.subs[i].cpNameEn + "</td></tr>"
+				}else{
+					list += "<tr class='detailSub' data-num='" + detail.subs[i].id + "'><td class='subContent-code' style='vertical-align: top !important;'>" + detail.subs[i].atcCode + "</td><td class='subContent-name'>" + detail.subs[i].cpNameCn + "&nbsp;" + "</td></tr>"
+				}
+				
+			}
+			$(".detail-subordinate table tbody").html(list);
+		});
+	});
+
+	// 点击请求
+	$(function(){
+
+		// indexid='';
+		// if(indexid==null || indexid==""){
+		// 	$(".download").show();
+		// }else{
+		// 	$(".download").hide();
+		// }
+	
+		$(".tree").on("click", ".glyphicon-chevron-right", function(){
+			$(this).removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+			var obj = $(this);
+			var code = $(this).data("code");
+			var index = url + "/atc/getSubcode?code=" + code;
+			$.get(index, function(d){
+				var list = "<ul>"
+				for (var i = 0; i < d.length; i++) {
+					if(d[i].subNum == 0){
+						if(d[i].cpNameCn != "" && d[i].cpNameCn != null){
+							list += "<li><span class='glyphicon glyphicon-minus' style='color: #d5d5d5; cursor: default;'></span><span class='name' data-id='" + d[i].id + "'>" + d[i].atcCode + "&nbsp;&nbsp;" + d[i].cpNameCn + "&nbsp;&nbsp;" + "</span></li>";
+						} else{
+							list += "<li><span class='glyphicon glyphicon-minus' style='color: #d5d5d5; cursor: default;'></span><span class='name' data-id='" + d[i].id + "'>" + d[i].atcCode + "&nbsp;&nbsp;" + d[i].cpNameEn + "</span></li>";
+						}
+					} else{
+						if(d[i].cpNameCn != "" && d[i].cpNameCn != null){
+							list += "<li><span data-code='" + d[i].atcCode + "' class='glyphicon glyphicon-chevron-right'></span><span class='name' data-id='" + d[i].id + "'>" + d[i].atcCode + "&nbsp;&nbsp;" + d[i].cpNameCn + "&nbsp;&nbsp;" +"</span></li>";
+						} else{
+							list += "<li><span data-code='" + d[i].atcCode + "' class='glyphicon glyphicon-chevron-right'></span><span class='name' data-id='" + d[i].id + "'>" + d[i].atcCode + "&nbsp;&nbsp;" + d[i].cpNameEn + "</span></li>";
+						}
+					}
+				}
+				list = list + "</ul>";
+				obj.parent().append(list);
+			});
+		});
+
+		$(".tree").on("click", ".glyphicon-chevron-down", function(){
+			$(this).parent().find("ul").remove();
+			$(this).removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+		});
+
+		$(".tree").on("click", ".name", function(){
+			var obj = $(this);
+			var id = $(this).data("id");
+			var index = url + "/atc/get?id=" + id;
+			getDetail(index);
+			$(".details").addClass("active");
+			$("#details").addClass("active");
+			$(".discuss").removeClass("active");
+			$("#discuss").removeClass("active");
+			$(".suggest").removeClass("active");
+			$("#suggest").removeClass("active");
+			$(".download").removeClass("active");
+			$("#download").removeClass("active");
+			// if(id==1){
+			// 	$(".download").show();
+			// 	// $("#download").removeClass("active");
+			// }else{
+			// 	$(".download").hide();
+			// 	$("#download").removeClass("active");
+			// }
+		});
+
+		//详情-子集点击跳转
+		$(".tab-content").on("click", ".detailSub", function(){
+			var id = $(this).data("num");
+			var index = url + "/atc/get?id=" + id;
+			getDetail(index);
+		});
+
+		//详情-返回上一级
+		$(".tab-content").on("click", ".back", function(){
+			var parentId = $(this).data("parentid");
+			var index = url + "/atc/get?id=" + parentId;
+			getDetail(index);
+		});
+
+	});
+	
+	function getDetail(index){
+		$.get(index, function(d){
+			var id = d.atc.id;
+			var name = d.atc.cpNameCn;
+			var en = d.atc.cpNameEn;
+			var code = d.atc.atcCode;
+			var introduce = d.atc.atcExplain;
+			var addition = d.atc.frequencyExplain;
+			var sub = d.subs;
+			var ddd = d.ddds;
+			var common = d.commons;
+			var parentId = d.parentId;
+
+			$(".ids").val(id);
+			concern();
+
+			// id判断根节点
+			if(id == 1){
+				$(".omahabtn").hide();
+			} else{
+				$(".omahabtn").show();
+			}
+
+			// 移除“了解更多”按钮
+			$(".detail-introduce").find("ul").remove();
+
+			// 名字
+			if(code == "" || code == null || code == 0){
+				if(name == "" || name ==null){
+					$(".detail-name .detailName").html(en);
+				} else{
+					$(".detail-name .detailName").html(name + "&nbsp;&nbsp;" + en);
+				}
+			} else{
+				if(name == "" || name ==null){
+					$(".detail-name .detailName").html(code + "&nbsp;&nbsp;" + en);
+				} else{
+					$(".detail-name .detailName").html(code + "&nbsp;&nbsp;" + name );
+				}
+			}
+
+			// 介绍
+			if(introduce != "" && introduce != null){
+				$(".detail-introduce span").html(introduce).css("color", "#666");
+				if(id == 1){
+					$(".detail-introduce").append("<ul class='nav'><li><a class='btn navbar-btn' style='width: 92px; height: 30px; border-radius: 8px; color: #fff; font-size: 14px; padding-top: 4px; padding-left: 15px; margin-top: 14px; margin-bottom: 0; background-image: url(http://term.omaha.org.cn/static/image/knowMoreBg.png); background-repeat:no-repeat;''>了解更多</a></li></ul>");
+				}
+			} else{
+				$(".detail-introduce span").html("暂无介绍说明").css("color", "#999");
+			}
+
+			// 下载
+			// if(id == 1){
+			// 	$(".detail-download").show();
+			// } else{
+			// 	$(".detail-download").hide();
+			// }
+
+			//频度说明
+			if(addition != "" && addition != null){
+				$(".detail-addition").show();
+				$(".detail-addition span").html(addition);
+			} else{
+				$(".detail-addition").hide();
+			}
+
+			// 返回上一级
+			if(id == 1){
+				$(".back").hide();
+			} else{
+				$(".back").data("parentid", parentId);
+				$(".back").show();
+			}
+
+			//子集
+			if(sub != "" && sub != null){
+				$(".detail-subordinate").show();
+				var list = "";
+				for (var i = 0; i < sub.length; i++) {
+					if(sub[i].cpNameCn == "" || sub[i].cpNameCn == null){
+						list += "<tr class='detailSub' data-num='" + sub[i].id + "'><td class='subContent-code'>" + sub[i].atcCode + "</td><td class='subContent-name'>" + sub[i].cpNameEn + "</td></tr>"
+					} else{
+						list += "<tr class='detailSub' data-num='" + sub[i].id + "'><td class='subContent-code' style='vertical-align: top !important;'>" + sub[i].atcCode + "</td><td class='subContent-name'>" + sub[i].cpNameCn + "&nbsp;" + "</td></tr>"
+					}
+				}
+				$(".detail-subordinate table tbody").html(list);
+			} else{
+				$(".detail-subordinate").hide();
+			}
+
+			//DDD
+			if(ddd != "" && ddd != null){
+				$(".detail-frequence").show();
+				var list = "";
+				var dose = "";
+				var unit = "";
+				var type = "";
+				var explain = "";
+				for (var i = 0; i < ddd.length; i++){
+					if(ddd[i].dose != null && ddd[i].dose != ""){
+						dose = ddd[i].dose;
+					}
+					if(ddd[i].unit != null && ddd[i].unit != ""){
+						unit = ddd[i].unit;
+					}
+					if(ddd[i].type != null && ddd[i].type != ""){
+						type = ddd[i].type;
+					}
+					if(ddd[i].dddExplain != null && ddd[i].dddExplain != ""){
+						explain = ddd[i].dddExplain;
+					}
+					list += "<tr><td>" + ddd[i].dose + "</td><td>" + ddd[i].unit + "</td><td>" + ddd[i].type + "</td><td>" + ddd[i].dddExplain + "</td></tr>"
+				}
+				$(".detail-frequence .subContent tbody").html(list);
+			} else{
+				$(".detail-frequence").hide();
+			}
+
+			//相关代码
+			if(common != "" && common != null){
+				$(".detail-code").show();
+				var list = "";
+				for (var i = 0; i < common.length; i++) {
+					list += "<tr><td class='subContent-code' style='vertical-align: top !important;'>" + common[i].atcCode + "</td><td class='subContent-name'>" + common[i].cpNameCn + "</td></tr>" 
+				}
+				$(".detail-code .subContent tbody").html(list);
+			} else{
+				$(".detail-code").hide();
+			}
+		});
+	}
+
+	$(".discuss").click(function(){
+		var ids = $(".ids").val();
+		var id_link = urls+"/?/topic/findwcid/atc|" + ids;
+		$.get(id_link, function(data){
+			var link = urls+"/?/topic/termquestion/atc|" + data;
+			$.get(link, function(d){
+				$("#discuss").html(d);
+			});
+		})
+	});
+
+	function concerned(obj){
+		var ids = $(".ids").val();
+		var id_link = urls+"/?/topic/findwcid/atc|" + ids;
+		$.get(id_link, function(data){
+			AWS.User.follow(obj, 'topic', data);
+		});
+	}
+
+	function concern(){
+		var ids = $(".ids").val();
+		var id_link = urls+"/?/topic/findwcid/atc|" + ids;
+		$.get(id_link, function(data){
+			var link = urls+"/?/topic/focus/" + data;
+			$.get(link, function(d){
+				if(d == 0){
+					$(".concern span").html("关注");
+					$(".concern").removeClass("active");
+				} else{
+					$(".concern span").html("取消关注");
+					$(".concern").addClass("active");
+				}
+			});
+		});
+	}
+
+	$(function(){
+		var termId = '';
+		if(termId != "" && termId != null){
+			var index = url + "/atc/get?id=" + termId;
+			getDetail(index);
+			termId = "";
+		}
+
+		//搜索框
+		$("#aw-search-query").focus(function(){
+			$(".search-submit").css("border-color","#499EF3");
+		});
+		$("#aw-search-query").blur(function(){
+			$(".search-submit").css("border-color","#ccc");
+		});
+
+		$("#aw-search-query").bind('input propertychange', function(){
+			q=$(this).val();
+			if(q!==null & q!==""){
+				$(".search-submit").attr('type','submit');
+			}else{
+				$(".search-submit").attr('type','');
+			}
+		})
+	});
+</script>
