@@ -1,14 +1,15 @@
 package util;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
 
 import java.io.*;
 import java.sql.Time;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class JsonExporter {
 
@@ -16,8 +17,8 @@ public class JsonExporter {
     private static int depth = 1;
 
     public static void find(String pathName, int depth) throws IOException {
-        List<String> fileNames = new ArrayList<String>();
-        int filecount = 0;
+        JsonExporter jsonExporter = new JsonExporter();
+        List<String> jsons = new ArrayList<String>();
         //获取pathName的File对象
         File dirFile = new File(pathName);
         //判断该文件或目录是否存在，不存在时在控制台输出提醒
@@ -58,11 +59,73 @@ public class JsonExporter {
                 }
                 System.out.print("|--");
                 System.out.println(name);
-                fileNames.add(file.getAbsolutePath());
+                jsons.add(jsonExporter.readToString(file.getAbsolutePath()));
             }
         }
-        System.out.println("共有" + fileNames.size() + "个文件");
+        System.out.println("共有" + jsons.size() + "个文件");
+        jsonExporter.translate(jsons);
+
     }
+
+    public void translate(List<String> jsons) throws IOException {
+        HashMap<String, String> level01 = new HashMap();
+        HashMap<String, String> level12 = new HashMap();
+        HashMap<String, String> level23 = new HashMap();
+        HashMap<String, String> level34 = new HashMap();
+        HashMap<String, String> level45 = new HashMap();
+
+        for (int i = 0; i < jsons.size(); i++) {
+            String jsonString = jsons.get(i);
+            JSONObject jsonObject = JSON.parseObject(jsonString);
+            String parentNameCn = jsonObject.getString("parentNameCn");
+            String parentCode = jsonObject.getString("parentCode");
+            int parentLevel = jsonObject.getInteger("parentLevel");
+            JSONObject atc = jsonObject.getJSONObject("atc");
+//            JSONArray subs = jsonObject.getJSONArray("subs");
+            if (parentLevel == 0) {
+                String cpNameCn = atc.getString("cpNameCn");
+                String atcCode = atc.getString("atcCode");
+                int level = atc.getInteger("level");
+                level01.put("level:" + parentLevel + " code:" + parentCode + " name:" + parentNameCn + " soncode:" + atcCode, "level:" + level + " code:" + atcCode + " name:" + cpNameCn);
+
+            } else if (parentLevel == 1) {
+                String cpNameCn = atc.getString("cpNameCn");
+                String atcCode = atc.getString("atcCode");
+                int level = atc.getInteger("level");
+                level12.put("level:" + parentLevel + " code:" + parentCode + " name:" + parentNameCn + " soncode:" + atcCode, "level:" + level + " code:" + atcCode + " name:" + cpNameCn);
+
+            } else if (parentLevel == 2) {
+                String cpNameCn = atc.getString("cpNameCn");
+                String atcCode = atc.getString("atcCode");
+                int level = atc.getInteger("level");
+                level23.put("level:" + parentLevel + " code:" + parentCode + " name:" + parentNameCn + " soncode:" + atcCode, "level:" + level + " code:" + atcCode + " name:" + cpNameCn);
+
+            } else if (parentLevel == 3) {
+                String cpNameCn = atc.getString("cpNameCn");
+                String atcCode = atc.getString("atcCode");
+                int level = atc.getInteger("level");
+                level34.put("level:" + parentLevel + " code:" + parentCode + " name:" + parentNameCn + " soncode:" + atcCode, "level:" + level + " code:" + atcCode + " name:" + cpNameCn);
+
+            } else if (parentLevel == 4) {
+                String cpNameCn = atc.getString("cpNameCn");
+                String atcCode = atc.getString("atcCode");
+                int level = atc.getInteger("level");
+                level45.put("level:" + parentLevel + " code:" + parentCode + " name:" + parentNameCn + " soncode:" + atcCode, "level:" + level + " code:" + atcCode + " name:" + cpNameCn);
+
+            }
+        }
+        HSSFWorkbook wb = ExcelMaker.getHSSFWorkbook("01", level01, null);
+        ExcelMaker.getHSSFWorkbook("12", level01, wb);
+        ExcelMaker.getHSSFWorkbook("23", level01, wb);
+        ExcelMaker.getHSSFWorkbook("34", level01, wb);
+        ExcelMaker.getHSSFWorkbook("45", level01, wb);
+
+//        makeExcel(wb, "Atc");
+
+        System.out.println("success");
+
+    }
+
 
     public String readToString(String[] fileName) {
         String returnString = "";
@@ -97,88 +160,7 @@ public class JsonExporter {
     }
 
     public static void main(String[] args) throws IOException {
-//        find("/Users/jachael/IdeaProjects/crawlers/target/classes/storage4omaha/", depth);
-        JsonExporter jsonExporter = new JsonExporter();
-        String a = jsonExporter.readToString("/Users/jachael/IdeaProjects/crawlers/target/classes/storage4omaha/meta.omaha.org.cn__atc_get_id=8901.json;charset=UTF-8");
-        System.out.println(a);
-    }
-
-
-    public boolean export(String jsonString) {
-        String path = "/Users/jachael/IdeaProjects/crawlers/target/classes/storage4omaha/";
-
-        return false;
-    }
-
-    /**
-     * 导出Excel
-     *
-     * @param sheetName sheet名称
-     * @param title     标题
-     * @param values    内容
-     * @param wb        HSSFWorkbook对象
-     * @return
-     */
-    public static HSSFWorkbook getHSSFWorkbook(String sheetName, String[] title, String[][] values, HSSFWorkbook wb) throws IOException {
-
-        // 第一步，创建一个HSSFWorkbook，对应一个Excel文件
-        if (wb == null) {
-            wb = new HSSFWorkbook();
-        }
-
-        // 第二步，在workbook中添加一个sheet,对应Excel文件中的sheet
-        HSSFSheet sheet = wb.createSheet(sheetName);
-
-        // 第三步，在sheet中添加表头第0行,注意老版本poi对Excel的行数列数有限制
-        HSSFRow row = sheet.createRow(0);
-
-        // 第四步，创建单元格，并设置值表头 设置表头居中
-        HSSFCellStyle style = wb.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER); // 创建一个居中格式 垂直：VerticalAlignment.CENTER
-
-        //声明列对象
-        HSSFCell cell = null;
-
-        //创建标题
-        for (int i = 0; i < title.length; i++) {
-            cell = row.createCell(i);
-            cell.setCellValue(title[i]);
-            cell.setCellStyle(style);
-        }
-
-        //创建内容
-        for (int i = 0; i < values.length; i++) {
-            row = sheet.createRow(i + 1);
-            for (int j = 0; j < values[i].length; j++) {
-                //将内容按顺序赋给对应的列对象
-                row.createCell(j).setCellValue(values[i][j]);
-            }
-        }
-
-        System.out.println(makeExcel(wb, sheetName));
-        return wb;
-
-    }
-
-    /**
-     * 存excel
-     *
-     * @param wb
-     * @param filename
-     * @return
-     * @throws IOException
-     */
-    public static boolean makeExcel(HSSFWorkbook wb, String filename) {
-        SimpleDateFormat df = new SimpleDateFormat("dd HH:mm:ss");
-        File xlsFile = new File("~/Documents/saveOMAHA/" + filename + df.format(new Date()) + ".xls");
-        try {
-            FileOutputStream xlsStream = new FileOutputStream(xlsFile);
-            wb.write(xlsStream);
-            return true;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
+        find("/Users/jachael/IdeaProjects/crawlers/target/classes/storage4omaha/", depth);
     }
 
 

@@ -56,4 +56,12 @@ public class Links {
         return unVisitedUrlQueue.isEmpty();
     }
 
+    public static void showLinks() {
+        int i = 1;
+        for (Object obj : visitedUrlSet) {
+            System.out.println(i + ":" + obj);
+            i += 1;
+        }
+    }
+
 }

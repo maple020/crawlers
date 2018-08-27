@@ -54,13 +54,16 @@ public class CharsetDetector {
         if (encoding == null) {
             if (length >= 3 && content[0] == (byte) 0xEF
                     && content[1] == (byte) 0xBB && content[2] == (byte) 0xBF) {
-                encoding = "UTF-8";
+//                encoding = "UTF-8";
+                encoding = "GBK";
             } else if (length >= 2) {
                 if (content[0] == (byte) 0xFF && content[1] == (byte) 0xFE) {
-                    encoding = "UTF-16LE";
+//                    encoding = "UTF-16LE";
+                    encoding = "GBK";
                 } else if (content[0] == (byte) 0xFE
                         && content[1] == (byte) 0xFF) {
-                    encoding = "UTF-16BE";
+//                    encoding = "UTF-16BE";
+                    encoding = "GBK";
                 }
             }
         }
@@ -69,13 +72,14 @@ public class CharsetDetector {
     }
 
     /**
-     * 根据字节数组，猜测可能的字符集，如果检测失败，返回utf-8
+     * 根据字节数组，猜测可能的字符集，如果检测失败，返回GBK
      *
      * @param bytes 待检测的字节数组
-     * @return 可能的字符集，如果检测失败，返回utf-8
+     * @return 可能的字符集，如果检测失败，返回GBK
      */
     public static String guessEncodingByMozilla(byte[] bytes) {
-        String DEFAULT_ENCODING = "UTF-8";
+//        String DEFAULT_ENCODING = "UTF-8";
+        String DEFAULT_ENCODING = "GBK";
         UniversalDetector detector = new UniversalDetector(null);
         detector.handleData(bytes, 0, bytes.length);
         detector.dataEnd();
@@ -88,9 +92,9 @@ public class CharsetDetector {
     }
 
     /**
-     * 根据字节数组，猜测可能的字符集，如果检测失败，返回utf-8
+     * 根据字节数组，猜测可能的字符集，如果检测失败，返回GBK
      * @param content 待检测的字节数组
-     * @return 可能的字符集，如果检测失败，返回utf-8
+     * @return 可能的字符集，如果检测失败，返回GBK
      */
     public static String guessEncoding(byte[] content) {
         String encoding;
