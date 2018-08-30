@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82950aa0-e1d7-4088-8bf3-5931452a506f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/startup/LoginModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/startup/MyCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/startup/NewCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ExcelMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/GetImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/link/Links.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/link/Links.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/startup/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/startup/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/CharsetDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/CharsetDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/FileTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/FileTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/JsonExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JsonExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/link/Links.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/link/Links.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/startup/LoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/startup/LoginModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/startup/NewCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/startup/NewCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/page/RequestAndResponseTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/RequestAndResponseTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/startup/Crawler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/startup/Crawler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/startup/Crawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/startup/Crawler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/_baike.baidu.com_item_感冒.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/_baike.baidu.com_item_肝炎.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/_baike.baidu.com_item_肝癌.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/term.omaha.org.cn___atc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/上呼吸道感染.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/肝炎.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/肝癌.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/CharsetDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/CharsetDetector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/FileTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/FileTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/JsonExporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/JsonExporter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,8 +23,8 @@
       <file leaf-file-name="ExcelMaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/util/ExcelMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="186" column="51" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="51" />
+            <state relative-caret-position="826">
+              <caret line="186" column="26" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#727#743#0" expanded="true" />
@@ -61,37 +37,68 @@
       <file leaf-file-name="NewCrawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/startup/NewCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="250" column="32" lean-forward="true" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+            <state relative-caret-position="306">
+              <caret line="267" column="41" lean-forward="true" selection-start-line="267" selection-start-column="41" selection-end-line="267" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3974#4213#0" expanded="true" />
                 <element signature="e#4212#4213#0" expanded="true" />
                 <element signature="e#7527#7535#0" expanded="true" />
-                <marker date="1534756627628" expanded="true" signature="8463:8602" ph="..." />
+                <marker date="1535531624392" expanded="true" signature="10125:10264" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiThreadExec.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/MultiThreadExec.java">
+      <file leaf-file-name="LoginModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/startup/LoginModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="758">
+              <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestAndResponseTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3669#3689#0" expanded="true" />
+                <element signature="e#4590#4606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazyTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/startup/LazyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lazy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/startup/Lazy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-              <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="true">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="110" column="12" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="12" />
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -108,21 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>init</find>
-      <find>initCrawlerWithSeeds</find>
-      <find>pws</find>
-      <find>getlink</find>
-      <find>save</find>
-      <find>yaozhi</find>
-      <find>$PROJECT_DIR$/target/classes/storage4med39/zy.yaozh.com_cpg_20180203_L650d5fe7dc6116f678662cef33807333a.pdf.pdf</find>
-      <find>log</find>
-      <find>system.out.print</find>
-      <find>parser</find>
-      <find>replaceal</find>
-      <find>replaceall</find>
-      <find>script</find>
-      <find>headers[k].getStringText()</find>
-      <find>createrow</find>
       <find>wb</find>
       <find>ran</find>
       <find>药品注册与受理数据库</find>
@@ -137,7 +129,22 @@
       <find>29471</find>
       <find>poi</find>
       <find>log.</find>
+      <find>getresponsebody</find>
+      <find>getresp</find>
+      <find>/span</find>
+      <find>/p</find>
       <find>10000</find>
+      <find>getResponseBodyAsStream</find>
+      <find>newArrayList</find>
+      <find>LazySingle</find>
+      <find>pom</find>
+      <find>mf1</find>
+      <find>mf</find>
+      <find>httpcomponents</find>
+      <find>httpclient</find>
+      <find>main</find>
+      <find>MyThread</find>
+      <find>t2</find>
     </findStrings>
     <replaceStrings>
       <replace>url</replace>
@@ -157,6 +164,11 @@
       <replace>药物分子靶点数据库</replace>
       <replace>28</replace>
       <replace>30</replace>
+      <replace>newList</replace>
+      <replace>Lazy</replace>
+      <replace>lazy</replace>
+      <replace>LazyThread</replace>
+      <replace>thread2</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -189,12 +201,16 @@
         <option value="$PROJECT_DIR$/src/main/java/util/ExcelMaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/startup/MyCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/page/PageParserTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/startup/LoginModule.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/util/FileTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/MultiThreadExec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/startup/Person.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/link/httpReqUrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/startup/LoginModule.java" />
         <option value="$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/startup/NewCrawler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/MultiThreadExec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/startup/Lazy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/startup/LazyTest.java" />
       </list>
     </option>
   </component>
@@ -214,7 +230,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="24" />
     <option name="width" value="1440" />
@@ -265,6 +281,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="link" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crawlers" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -299,10 +323,6 @@
               <item name="crawlers" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -342,42 +362,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MultiThreadExec">
-    <configuration name="ExcelMaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.ExcelMaker" />
-      <module name="crawlers" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="LoginModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="startup.LoginModule" />
-      <module name="crawlers" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="startup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="MultiThreadExec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.MultiThreadExec" />
-      <module name="crawlers" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="MyCrawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="startup.MyCrawler" />
+  <component name="RunManager" selected="JUnit.LazyTest.test">
+    <configuration name="LazyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="startup.LazyTest" />
       <module name="crawlers" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -398,8 +385,65 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="RequestAndResponseTool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="page.RequestAndResponseTool" />
+      <module name="crawlers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="page.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="LazyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawlers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="startup" />
+      <option name="MAIN_CLASS_NAME" value="startup.LazyTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="LazyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawlers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="startup" />
+      <option name="MAIN_CLASS_NAME" value="startup.LazyTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -440,19 +484,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.MyCrawler" />
-      <item itemvalue="Application.ExcelMaker" />
-      <item itemvalue="Application.LoginModule" />
       <item itemvalue="Application.NewCrawler" />
-      <item itemvalue="Application.MultiThreadExec" />
+      <item itemvalue="JUnit.LazyTest" />
+      <item itemvalue="Application.RequestAndResponseTool" />
+      <item itemvalue="Application.LazyTest" />
+      <item itemvalue="JUnit.LazyTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MultiThreadExec" />
+        <item itemvalue="JUnit.LazyTest.test" />
+        <item itemvalue="Application.LazyTest" />
+        <item itemvalue="JUnit.LazyTest" />
         <item itemvalue="Application.NewCrawler" />
-        <item itemvalue="Application.LoginModule" />
-        <item itemvalue="Application.ExcelMaker" />
-        <item itemvalue="Application.MyCrawler" />
+        <item itemvalue="Application.RequestAndResponseTool" />
       </list>
     </recent_temporary>
   </component>
@@ -473,40 +517,77 @@
       <workItem from="1532314416675" duration="31172000" />
       <workItem from="1533286274131" duration="71965000" />
       <workItem from="1533873411873" duration="3182000" />
-      <workItem from="1534310577403" duration="32251000" />
+      <workItem from="1534310577403" duration="54805000" />
     </task>
+    <task id="LOCAL-00001" summary="last update">
+      <created>1535353760402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535353760402</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LazyTest_test - 2018.08.29 at 14h 23m 49s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_test - 2018.08.29 at 14h 25m 05s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest - 2018.08.29 at 14h 25m 13s.xml">
+      <configuration name="LazyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest - 2018.08.29 at 14h 25m 57s.xml">
+      <configuration name="LazyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest - 2018.08.29 at 23h 02m 36s.xml">
+      <configuration name="LazyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_test - 2018.08.29 at 23h 05m 55s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_test - 2018.08.29 at 23h 08m 03s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_test - 2018.08.29 at 23h 10m 54s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyTest_test - 2018.08.29 at 23h 15m 10s.xml">
+      <configuration name="LazyTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156305000" />
+    <option name="totallyTimeSpent" value="178859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="24" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="24" width="1440" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.6230329" visible="true" weight="0.3292011" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.57081544" weight="0.3292011" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3769671" side_tool="true" visible="true" weight="0.3292011" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2911302" side_tool="true" visible="true" weight="0.3278237" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74892706" weight="0.3278237" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.3287483" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7088698" visible="true" weight="0.3278237" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" weight="0.3287483" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.40128756" weight="0.39807162" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.3869814" weight="0.39807162" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -519,6 +600,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last update" />
+    <option name="LAST_COMMIT_MESSAGE" value="last update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -543,12 +628,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/startup/NewCrawler.java</url>
-          <line>192</line>
+          <line>214</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/startup/LoginModule.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/startup/LoginModule.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="129" />
+      <option name="time" value="142" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -561,65 +658,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/org/apache/commons/httpclient/HttpMethodBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/link/LinkFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/hssf/usermodel/HSSFCellStyle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/URLTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/regex/Matcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1627">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/select/Elements.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/net/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="266" column="7" lean-forward="true" selection-start-line="266" selection-start-column="7" selection-end-line="266" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/RegexRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -683,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/org/apache/commons/httpclient/HttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="111" column="15" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/org/apache/commons/httpclient/Header.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -740,23 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/Connection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="197" column="23" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/nodes/Element.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -780,16 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1106">
           <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/startup/LoginModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -845,13 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar!/org/htmlparser/tags/TableTag.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -894,20 +891,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/concurrent/Callable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="318">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="110" column="12" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/MultiThreadExec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/page/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="302" column="19" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
+          <folding>
+            <element signature="e#11079#11080#0" expanded="true" />
+            <element signature="e#11117#11118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/startup/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.log.2018-08-27">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/link/httpReqUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/message/BasicNameValuePair.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/org/apache/commons/httpclient/HttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar!/org/jsoup/Connection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/startup/LoginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/startup/NewCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="267" column="41" lean-forward="true" selection-start-line="267" selection-start-column="41" selection-end-line="267" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3974#4213#0" expanded="true" />
+            <element signature="e#4212#4213#0" expanded="true" />
+            <element signature="e#7527#7535#0" expanded="true" />
+            <marker date="1535531624392" expanded="true" signature="10125:10264" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/ExcelMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="186" column="51" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="51" />
+        <state relative-caret-position="826">
+          <caret line="186" column="26" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#727#743#0" expanded="true" />
@@ -916,42 +1036,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/concurrent/Callable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/page/RequestAndResponseTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/startup/NewCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="250" column="32" lean-forward="true" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+        <state relative-caret-position="19">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3974#4213#0" expanded="true" />
-            <element signature="e#4212#4213#0" expanded="true" />
-            <element signature="e#7527#7535#0" expanded="true" />
-            <marker date="1534756627628" expanded="true" signature="8463:8602" ph="..." />
+            <element signature="e#3669#3689#0" expanded="true" />
+            <element signature="e#4590#4606#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/MultiThreadExec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/startup/Lazy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-          </folding>
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/startup/LazyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="12" />
+        <state relative-caret-position="333">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

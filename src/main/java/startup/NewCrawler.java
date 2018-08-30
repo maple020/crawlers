@@ -143,59 +143,84 @@ public class NewCrawler {
 
             Document doc = page.getDoc();
 //            Elements es = doc.getElementsByClass("table table-striped");
-            Elements es = doc.getElementsByClass("table");
-
-            Parser myParser;
-            NodeList nodeList = null;
-            String context = es.toString();
-            context = context.replace("</a>", "").replaceAll("<a[^>]*>", "").replaceAll("<i[^>]*>([^<]*)</i>", "");
-
-            myParser = Parser.createParser(context, "gbk");
-            NodeFilter tableFilter = new NodeClassFilter(TableTag.class);
-            OrFilter lastFilter = new OrFilter();
-            lastFilter.setPredicates(new NodeFilter[]{tableFilter});
-            try {
-                // 获取标签为table的节点列表
-                nodeList = myParser.parse(lastFilter);
-                // 循环读取每个table
-                String sheetNameId = visitUrl.substring(33).replace(".html", "");
-                HSSFSheet sheet = wb.createSheet("药物相互作用数据库" + "第" + sheetNameId + "页");
-                for (int i = 0; i < nodeList.size(); i++) {
-                    log.info(sheetNameId);
-                    if (nodeList.elementAt(i) instanceof TableTag) {
-                        TableTag tag = (TableTag) nodeList.elementAt(i);
-                        TableRow[] rows = tag.getRows();
-                        // 循环读取每一行
-                        for (int j = 0; j < rows.length; j++) {
-                            TableRow row = (TableRow) rows[j];
-//                            Row r = sheet.createRow(j);
-                            Row r = rowGetter(sheet, j);
-                            // the reason to get headers is to parse <th> tag
-                            TableHeader[] headers = row.getHeaders();
-                            for (int k = 0; k < headers.length; ++k) {
-                                String head = headers[k].getStringText();
-                                r.createCell(k).setCellValue(head);
-//                                System.out.println("第" + j + "行，第" + k + "列的标签的内容为：" + head);
-                            }
-
-                            TableColumn[] columns = row.getColumns();
-                            for (int k = 0; k < columns.length; ++k) {
-                                String info = columns[k].toPlainTextString().trim();
-                                r.createCell(k + 1).setCellValue(info);
-//                                System.out.println("第" + j + "行，第" + k + "列的标签的内容为：" + info);
-                            }
-                        }
+//            Elements es = doc.getElementsByClass("table");
+            Elements es = doc.getElementsByClass("manual");
+//            Parser myParser;
+//            NodeList nodeList = null;
+            if (es != null) {
+                String context = es.toString();
+                context = context.replace("</a>", "").replaceAll("<a[^>]*>", "")
+                        .replaceAll("<i[^>]*>([^<]*)</i>", "").replaceAll("<div[^>]*>", "")
+                        .replace("</div>", "").replaceAll("<script[^>]*>([^<]*)</script>", "")
+                        .replace("<span>", "").replace("<p>", "").replace("<b>", "")
+                        .replace("</b>", "").replace("</p>", "").replace("</span>", "：")
+                        .replace(" \n" + "  \n" + "  \n", "").replaceAll("<style[^>]*>([^<]*)</style>", "")
+                        .replace("<strong>", "").replace("</strong>", "")
+                        .replace("<br>", "").replace("</br>", "")
+                        .replaceAll("<p[^>]*>", "").replace("&nbsp;", "").replace("&gt;", "")
+                        .replaceAll("<span[^>]*>", "").replace("查看全文：", "").replace("\n" + "  查看", "");
+                if (context.replace(" ", "").length() > 0) {
+                    //            myParser = Parser.createParser(context, "gbk");
+//            NodeFilter tableFilter = new NodeClassFilter(TableTag.class);
+//            OrFilter lastFilter = new OrFilter();
+//            lastFilter.setPredicates(new NodeFilter[]{tableFilter});
+//            try {
+//                // 获取标签为table的节点列表
+//                nodeList = myParser.parse(lastFilter);
+//                // 循环读取每个table
+//                String sheetNameId = visitUrl.substring(31).replace(".html", "");
+//                HSSFSheet sheet = wb.createSheet("药材标准" + "第" + sheetNameId + "页");
+//                for (int i = 0; i < nodeList.size(); i++) {
+//                    log.info(sheetNameId);
+//                    if (nodeList.elementAt(i) instanceof TableTag) {
+//                        TableTag tag = (TableTag) nodeList.elementAt(i);
+//                        TableRow[] rows = tag.getRows();
+//                        // 循环读取每一行
+//                        for (int j = 0; j < rows.length; j++) {
+//                            TableRow row = (TableRow) rows[j];
+////                            Row r = sheet.createRow(j);
+//                            Row r = rowGetter(sheet, j);
+//                            // the reason to get headers is to parse <th> tag
+//                            TableHeader[] headers = row.getHeaders();
+//                            for (int k = 0; k < headers.length; ++k) {
+//                                String head = headers[k].getStringText();
+//                                r.createCell(k).setCellValue(head);
+////                                System.out.println("第" + j + "行，第" + k + "列的标签的内容为：" + head);
+//                            }
+//
+//                            TableColumn[] columns = row.getColumns();
+//                            for (int k = 0; k < columns.length; ++k) {
+//                                String info = columns[k].toPlainTextString().trim();
+//                                r.createCell(k + 1).setCellValue(info);
+////                                System.out.println("第" + j + "行，第" + k + "列的标签的内容为：" + info);
+//                            }
+//                        }
+//                    }
+//                }
+//            } catch (ParserException e) {
+//                e.printStackTrace();
+//            }
+                    int i = 1;
+                    HSSFSheet sheet = wb.getSheet("药材标准");
+                    if (sheet == null) {
+                        sheet = wb.createSheet("药材标准");
                     }
-                }
-            } catch (ParserException e) {
-                e.printStackTrace();
-            }
-            ExcelMaker.makeExcel(wb, filename);
 
+                    if (sheet.getRow(0) == null) {
+                        Row r0 = rowGetter(sheet, 0);
+                        r0.createCell(0).setCellValue("药材");
+                    }
+                    Row r = rowGetter(sheet, i);
+                    r.createCell(0).setCellValue(context);
+                    ExcelMaker.makeExcel(wb, filename);
+
+                }
+            }
 //            FileTool.saveToLocal("药物分子靶点数据库",page);
 
             //将已经访问过的链接放入已访问的链接中；
             Links.addVisitedUrlSet(visitUrl);
+            log.info("已完成"+Links.getVisitedUrlNum()+"还剩"+Links.getUnVisitedUrlQueue().size());
         }
 
     }
@@ -224,7 +249,7 @@ public class NewCrawler {
 
     public static void main(String[] args) {
 //        String urlpre = "https://db.yaozh.com/cpg?p=";
-        File file = new File("/Users/jachael/Documents/药物相互作用数据库1.xls");
+        File file = new File("/Users/jachael/Documents/药材标准7.xls");
         HSSFWorkbook wb = new HSSFWorkbook();
         try {
             wb = new HSSFWorkbook(new FileInputStream(file));
@@ -235,18 +260,21 @@ public class NewCrawler {
 //        String urlpre = "https://db.yaozh.com/zhuce?p=";
 //        String urlpre = "https://db.yaozh.com/inn/";
 //        String urlpre = "https://db.yaozh.com/targets/";
-        String urlpre = "https://db.yaozh.com/interaction/";
+//        String urlpre = "https://db.yaozh.com/interaction/";
+        String urlpre = "https://db.yaozh.com/yaocai_bz/";
 //        String urlsuf = "&pageSize=30";
         String urlsuf = ".html";
-        int q = 1;
-        int k = 2000;//6928
+        int y = 117+102+93+8+85+484+1000+207;
+        int x = 5000+371+340+11+223+70+y;
+        int q = 12880-x;
+        int k = 1+x;
         String url[] = new String[q];
         for (int i = 0; i < q; i++) {
             url[i] = urlpre + (i + k) + urlsuf;
         }
         NewCrawler NewCrawler = new NewCrawler();
         try {
-            NewCrawler.crawling(url, wb, "药物相互作用数据库1");
+            NewCrawler.crawling(url, wb, "药材标准7");
         } catch (Exception e) {
             e.printStackTrace();
         }
